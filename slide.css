@@ -1,0 +1,169 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+
+
+}
+main{
+
+display: flex;
+justify-content: center;
+height: 50vh;
+align-items: center;
+margin-top: 50%;
+
+}
+.slider{
+width: 1250px;
+overflow: hidden;
+display: flex;
+padding: 30px 40px;
+position: relative;
+
+}
+:root {
+    --red: #871919;
+    --green:green;
+    --black:black;
+    --box-shadow: 0  .5rem 1.5rem rgba(0, 0, 0, 0.23);
+
+ --border:2rem solid rgba(0, 0, 0, 0.244);
+ --outline: .1rem solid rgba(0, 0, 0, 0.253);
+    }
+
+
+
+.slider .product{
+    width: 420px;
+    padding: 30px 30px ;
+box-shadow: 0 0 10px 5px rgb(26, 25, 25);
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: 0.5s;
+   position: relative;
+   height: 73vh;
+    
+    }
+    
+.slider .product:hover{
+    box-shadow: 1px 1px 10px 4px var(--red);
+}
+
+
+
+
+.slider .product img{
+    width: 350px;
+    height:300px;
+    object-fit: cover;
+border-radius: 10px 10px 0 0;
+
+}
+.slider .product .information{
+
+    
+flex-wrap: wrap;
+justify-content: space-between;
+font-family:'Courier New', Courier, ;
+
+
+}
+.slider .product .information .title{
+    font-size: 2.3rem;
+    color:var(--black) ;
+    margin-left: 30%;
+}
+
+.slider .product .information p{
+
+    font-size: 1.1rem;
+    color:var(--black) ;
+    padding: 0.1rem 12px;
+text-align: justify;
+
+
+
+}
+
+
+.slider .product .information .price{
+    font-size: 22px;
+    font-weight:bold;
+    position: absolute;
+    bottom: 60px;
+    margin-left: 10px
+}
+
+
+.dekho{
+
+bottom: 90px
+
+}
+
+
+
+ .information button{
+width: 50%;
+background: red;
+border: none;
+outline: none;
+color: white;
+padding: 7px 10px;
+cursor: pointer;
+border-radius: 5px;
+margin: 10px 0;
+position: absolute;
+bottom: 0px;
+margin-left: 80px;
+
+
+}
+.slider .product .information button:hover{
+
+    width: 55%;
+    padding: 8px 11px;
+    font-weight:bolder ;
+  background-color:rgb(213, 16, 223) ;
+  color: rgb(255, 30, 0);
+
+}
+
+
+
+
+.slider .arrow{
+
+width: 1270px;
+position: absolute;
+justify-content:space-between;
+display: flex;
+top:40%;
+
+}
+
+.slider .arrow button{
+
+font-size: 20px;
+width: 50px;
+height: 50px;
+font-weight: bold;
+border-radius: 50%;
+border: 2px solid gray;
+background-color: white;
+margin: 0 20px;
+cursor: pointer;
+
+
+
+}
+.slider .arrow button:hover{
+
+    border:3px solid rgb(121, 16, 16) ;
+    border-radius: 100%;
+
+
+
+}

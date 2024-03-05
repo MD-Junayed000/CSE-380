@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AroInsa Medicine Solution</title>
+ <!--link to the Css page-->   <link rel="stylesheet" href="home .css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!--font/text--><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Boxicon/sign--><link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!--link of the icon on tab--><link rel="icon" type="image/png" href="icon.png" >
+</head>
+<body>
+      <!--header(from logo to login sign)-->
+    <header>
+    <a href="" class="logo"><img src="Medical Care.png" title=""                            > </a>
+
+    <ul class="navigation-menu">
+        <div class="box">
+            <input type="text" placeholder="Search...">
+            <a href="" class="search"><i class='bx bx-search'></i>    </a>
+
+        </div>  
+    <li><a href="home.html" class="active">Home    </a></li>
+    <li><a href="     ">Product & Services      </a></li>
+    <li><a href="     "> Ask a Doctor    </a></li>
+    <li><a href="     ">  Emergency </a></li>
+    <li><a href="Article.html">  Article  </a></li>
+</ul>
+<div class="navigation-icons">
+    <a href=""> <i class='bx bx-cart'></i>   </a>
+     <a  href="" > <i class='bx bxs-user-detail' ></i>  </a>
+
+</div>
+</header>
+<!--(from here oi j vedio/banner chng hoi)-->
+<div class="slideshow-container">
+      <!--(Banner er bitorer likka)-->
+    <div class="banner">
+        <div class="banner-text">
+            <h2>To get</h2>
+            <h2 class="two">Best Deal</h2>
+            <button id="btn">Buy Now</button>
+
+        </div>
+    </div>
+   <!--<div class="mySlides fade">
+        <img src="ekn.jpg" style="width:100%">
+    </div>-->
+        <!--(video ta)-->
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <video  controls autoplay muted loop src="Untitled.mov" height="250" width="100000" >
+        </video>
+    </div>
+        <!--1st image-->
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="Banner day.jpg" style="width:100%">
+    </div>  
+      <!--2nd image-->
+    <div class="mySlides fade">
+        <img src="Day (1810 x 800 px) (24 x 6 cm).jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+<!--(niche dot gula)-->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>  
+
+
+
+
+<!--eikan teke our products er kaj start-->
+<section class="products"id="products">
+    <h1 class="heading"> Our <span>Products</span> </h1>
+</section>
+
+
+<main>
+    <div class="slider">
+        <div class="product">
+            <div class="image">
+                <img src="napa.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="title"><h3>Napa</h3></div>
+                <p>Napa (Paracetamol) is a fast acting and safe analgesic with marked antipyretic property.</p>
+
+                <div class="price"> ৳200</div>
+                <button class="dekho">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                <img src="nizoder.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="title"><h3>Nizoder</h3></div>
+                <p>Nizoral is a medicinal shampoo to treat dandruff and seborrhoeic dermatitis with flaking and itching.</p>
+
+                <div class="price"> ৳200</div>
+                <button class="dekho">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="image">
+                <img src="glucose new.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="title"><h3>Glucose</h3></div>
+                <p>Glaxose-D is a non-flavoured easily digestible glucose drink which is a fast and effective provider of energy that can be used by children and adults alike.</p>
+
+                <div class="price"> ৳200</div>
+                <button class="dekho">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                <img src="nizoder.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="title">headphone</div>
+                <div class="price"> ৳200</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="image">
+                <img src="napa.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="title">headphone</div>
+                <div class="price"> ৳200</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+<div class="arrow">
+
+<button class="left" onclick="left()"   ><</button>
+<button class="right" onclick="right()">></button
+>
+</div>
+
+    </div>
+</main>
+
+
+<script src="slide.js"    ></script>
+
+
+<!--(oi banner ta kaj koranor jonno / animation er jonno Javascript disi)-->
+<script src="home.js"></script>
+
+<!--footer all-->
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="icon.png"class=logofoot height="50" weidth="40">
+            <p>Visit AroInsa Medicine Solution</p><p>To unlock a Healthier you </p>
+        </div>
+        <div class="col">
+        <h3>Contact Us <div class="underline"><span></span></div></h3>
+        <p class="email-id">u2008020@student.cuet.ac.bd</p>
+        <p class="email-id">u2008023@student.cuet.ac.bd</p>
+        <h4><p>+880-1876220119</p></h4>
+        <h4><p>+880-1558711356</p></h4>
+        </div>
+
+        <div class="col">
+            <h3>Links <div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="home.html"><p></p>Home</a></li>
+                <li><a href="">Product & Services</a></li>
+                <li><a href="">Ask a doctor</a></li>
+                <li><a href="">Emergency</a></li>
+                <li><a href="Article.html">Article</a></li>
+                
+            </ul>
+        </div>
+        <div class="col">
+        <h3>Health Article<div class="underline"><span></span></div></h3>
+        <form class="news">
+            <i class='bx bxs-envelope' id="one"></i>
+            <input type="email" placeholder="Enter your email id" required>
+            <button><i class='bx bx-right-arrow-alt' id="two"></i></button>
+        </form>
+        <div class="social-icons">
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-whatsapp' ></i>
+            <i class='bx bxl-messenger' ></i>
+            <i class='bx bxl-instagram-alt' ></i>
+        </div>
+        </div>
+        
+
+    </div>
+    <hr>
+
+    <p class="copyright">&copy2024 AroInsa Medicine Solution.All Rights Reserved; Designed by <span class="design">IFFAT ARA </span> & <span class="design"> MUHAMMED JUNAYED </span>
+
+
+ </p>
+</footer>
+   <!--(login niye kaj korte chaisilam but kori nai)-->
+<!--<div > 
+    <ul class="sidebar">
+        <li onclick=hideSidebur()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+ 
+    </ul>
+</div>
+<script>
+function showsidebar(){
+const sidebar=document.querySelector(".sidebar")
+sidebar.style.display="flex"}
+</script>
+-->
+</body>
+</html>

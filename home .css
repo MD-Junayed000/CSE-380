@@ -1,0 +1,696 @@
+/*  whole web page er    */ 
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+list-style: none;
+text-decoration: none;
+}
+   /*  just body where we put the image  */
+body{
+  background-image: url(desk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}  
+/*  header ta */
+header{
+width: 100%;
+top: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1px 2%;
+}
+.logo img{
+  max-width: 300px;
+  height: auto;
+}
+.navigation-menu{
+    display: flex;
+    
+}
+.navigation-menu a{
+color: black;
+font-size: 20px;
+text-transform: capitalize;
+padding: 15px 20px;
+font-weight: 500;
+}
+.navigation-menu a:hover{
+  color: rgb(230, 7, 66);
+  font-weight: 900;
+}
+.navigation-menu a.active{
+font-weight: 900;
+font-style: oblique;
+font-size: 1.25em;
+background-color: transparent;
+border-radius: 50px;
+}
+.navigation-icons{
+display: flex;
+align-items: center;
+display: inline;
+}
+.navigation-icons i{
+margin-right: 30px;
+color: rgb(0, 0, 0);
+font-size: 50px;
+font-weight: 400;
+}
+.navigation-icons i:hover{
+    transform: scale(1.5);
+    color: rgb(255, 0, 149);
+}
+  /*  search box er kaj  */
+.box{
+height: 40px;
+ display: flex;
+ cursor: pointer;
+background-color: #871919;
+border-radius: 30px;
+align-items: center;
+padding: 10px  ;
+}
+
+.box text{
+  height: 40px;
+}
+
+.box:hover input{
+    width: 200px;
+}
+.box input{
+    width: 0;
+    height: 100;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    transition: 0.8s ease-in-out;
+}
+.box a.search{
+  
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+}
+.box a.search:hover{
+    transform: scale(1.6);
+   
+}
+
+
+  /*  majkane j vedio and banner ta disi oita   */
+
+.mySlides {
+    display: none;
+}
+video{
+width: 100%;
+height: 9cm;
+background-color:#871919;
+
+}
+img {
+    vertical-align: middle;
+   
+    height: 9cm;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin:auto;
+  height: 9cm;
+
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}    
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #940808;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #eb09c1;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1} 
+}
+
+  /*  banner er bitorer likka  */
+.banner{
+ position:absolute;
+  }
+    
+    .banner-text{
+        padding-top: 10px;
+        margin-left: 50px;
+    }    
+
+  .banner-text{
+    margin-top: 30%;
+    padding-top: 16px;
+    margin-left: 80px;
+  }
+  
+.banner-text h2{
+
+ font-weight:bolder;
+ font-size: 35px;
+
+}
+.banner-text h2.two{
+  font-weight:bolder;
+  font-size: 50px;
+ }
+      /*  Button er kaj */
+#btn{
+width:130px ;
+height: 35px;
+font-weight:bold ;
+background-color:rgb(234, 140, 18) ;
+letter-spacing: 3pt;
+margin: left 80px; ;
+color: rgb(255, 255, 255);
+border-radius: 20px;
+border:none ;
+cursor: pointer;
+margin-top: 15px;
+}
+#btn:hover{
+  width: 170px;
+  height: 40px;
+  font-weight:bolder ;
+background-color:rgb(213, 16, 223) ;
+color: rgb(255, 30, 0);
+
+}
+     /*  footer er kaj  */
+
+footer{
+  width: 100%;
+  position: relative;
+ bottom: 0px;
+  background:linear-gradient(to right,#000000, #a52a2a);
+  color: #ffffff;
+  padding: 15px 0px 4px ;
+  border-top-left-radius: 140px; 
+  font-size: 15px;
+
+
+}
+.row{
+
+  width:80%;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap ;
+  align-items: flex-start;
+  justify-content:space-between ;
+}
+.col{
+flex-basis:1;
+padding: 10px;
+
+}
+p{
+
+  margin-top: 15px;
+
+}
+.logofoot {
+  width:100px;
+  height: auto;
+  margin-bottom:10pxpx ;
+
+}
+.col h3{
+
+  width:fit-content;
+  border-bottom:40px ;
+  position:relative;
+}
+
+
+.email-id{
+
+  width:fit-content;
+  border-bottom: 1px solid #fffdfd;
+  margin:20px 10;
+}
+ul li {
+
+   list-style:none ;
+   margin-bottom: 10px;
+}
+ul li a{
+
+  text-decoration:none;
+  color: #fff;
+}
+form{
+
+  margin-top: 15px;
+ 
+  padding-bottom: 15px;
+display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  border-bottom: 2px solid #fffdfd;
+  margin-bottom: 10px;
+}
+#one{
+  font-size: 25px;
+  margin-right: 10px;
+
+}
+#two{
+  font-size: 27px;
+ 
+  cursor: pointer;
+  color: #ffffff;
+}
+form input{
+  width:100%;
+  background: transparent;
+  color:#fffcfc;
+  border: 0;
+  outline: none;
+
+}
+
+form button {
+
+  background: transparent;
+  border: 0;
+  outline:none;
+  cursor: pointer;
+}
+.social-icons{
+  font-size: 35px;
+cursor: pointer;
+}
+
+.design{
+opacity: 0.7;
+font-style: italic;
+letter-spacing: 1px;
+font-weight: 400;
+margin: 0 5px;
+}
+hr{
+
+width: 90%;
+border: 0;
+border-bottom: 1px solid #ffffff;
+margin: 20px auto;
+}
+.copyright{
+text-align: center;
+font-size: 12px;
+}
+
+.underline{
+width:100%;
+height: 5px;
+border-radius: 5px;
+position: absolute;
+background-color: #8f8d8d;
+
+left: 0;
+}
+
+.underline span{
+
+width: 15px;
+height: 100%;
+background: #fff;
+left: 10px;
+border-radius: 5px;
+position: absolute;
+animation:moving 2s linear infinite;
+
+
+}
+@keyframes moving{
+
+0%{
+  left: -20px;
+}
+100%{
+  left: 100%;
+}
+
+   /*  our products er kaj  */
+}
+section{
+  padding: 1rem 1%;
+}
+:root {
+  --color: #060606;
+}
+.heading{
+
+  text-align: center;
+  padding: 1rem 0;
+
+  font-size: 3.5rem;
+  color: var(--color);
+}
+
+:root {
+  --my-color: #871919;
+}
+
+
+
+.heading span{
+
+  background: var(--my-color);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 0.4rem 3rem;
+  clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+
+main{
+
+margin: auto;
+max-width: 90%;
+  justify-content: center;
+  
+  bottom: 40px;
+  }
+  .slider{
+  width: 1320px;
+  overflow: hidden;
+  display: flex;
+  padding: 20px 40px;
+  position: relative;
+  bottom: 20px;
+  }
+  :root {
+      --red: #871919;
+      --green:green;
+      --black:black;
+      --box-shadow: 0  .5rem 1.5rem rgba(0, 0, 0, 0.23);
+  
+   --border:2rem solid rgba(0, 0, 0, 0.244);
+   --outline: .1rem solid rgba(0, 0, 0, 0.253);
+      }
+  
+  
+  
+  .slider .product{
+      width: 420px;
+      padding: 30px 30px ;
+  box-shadow: 0 0 10px 5px rgb(26, 25, 25);
+      border-radius: 10px;
+      margin-right: 20px;
+      transition: 0.5s;
+     position: relative;
+     height: 85vh;
+     
+      
+      }
+      
+  .slider .product:hover{
+      box-shadow: 1px 1px 10px 4px var(--red);
+  }
+  
+  
+  
+  
+  .slider .product img{
+      width: 350px;
+      height:300px;
+      object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  
+  }
+  .slider .product .information{
+  
+      
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family:'Courier New', Courier, ;
+  
+  
+  }
+  .slider .product .information .title{
+      font-size: 2.3rem;
+      color:var(--black) ;
+      margin-left: 30%;
+  }
+  
+  .slider .product .information p{
+  
+      font-size: 1.1rem;
+      color:var(--black) ;
+      padding: 0.1rem 12px;
+  text-align: justify;
+  
+  
+  
+  }
+  
+  
+  .slider .product .information .price{
+      font-size: 22px;
+      font-weight:bold;
+      position: absolute;
+      bottom: 50px;
+      margin-left:10px;
+  }
+  
+  
+  .dekho{
+  
+  bottom: 90px
+  
+  }
+  
+  
+  
+   .information button{
+  width: 50%;
+  background: red;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: absolute;
+  bottom: 6px;
+  margin-left: 60px;
+  
+  
+  }
+  .slider .product .information button:hover{
+  
+      width: 55%;
+      padding: 8px 11px;
+      font-weight:bolder ;
+    background-color:rgb(213, 16, 223) ;
+    color: rgb(255, 30, 0);
+  
+  }
+  
+  .slider .arrow{
+  
+  width: 1270px;
+  position: absolute;
+  justify-content:space-between;
+  display: flex;
+  top:40%;
+
+  }
+  
+  .slider .arrow button{
+  
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid gray;
+  background-color: white;
+  margin: 0 20px;
+  cursor: pointer;
+  
+  
+  
+  }
+  .slider .arrow button:hover{
+  
+      border:3px solid rgb(121, 16, 16) ;
+      border-radius: 100%;
+  
+  
+  
+  }
+
+
+
+
+
+
+
+
+
+
+         /*  ((login page ta jonno  but partesinh))  */
+
+
+    /*.sidebar{
+    position: fixed;
+
+    /* border-style:hidden; 
+    top: 10px;
+    right: 0;
+    height: 100px;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(109, 104, 104, 0.135);
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0. 10px rgba(102, 29, 29, 0.369);
+    display:none ;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar ul{
+    list-style:none;
+} 
+
+.sidebar li{
+    width: 90%;
+
+}
+
+.sidebar a{
+    width: 100%;   
+}
+*/
+
+@media (max-width: 768px) {
+  body {
+    /* Modify styles for tablets */
+  }
+
+  .slider {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .slider .product {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* CSS for Mobile */
+@media (max-width: 480px) {
+  body {
+    /* Modify styles for mobile */
+  }
+
+  header {
+    /* Adjust header styles for mobile */
+  }
+
+  .slider {
+    padding: 10px;
+  }
+
+  .slider .product {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .slider .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .slider .product .information {
+    margin-left: 0;
+  }
+
+  .slider .product .information .title {
+    margin-left: 0;
+  }
+
+  .slider .product .information .price {
+    bottom: 10px;
+  }
+
+  .dekho {
+    bottom: 40px;
+  }
+
+  .slider .arrow {
+    width: 100%;
+    justify-content: space-between;
+    top: 20%;
+  }
+
+  .slider .arrow button {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+}

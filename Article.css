@@ -1,0 +1,391 @@
+/*  whole web-page er    */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    }
+    /*  just body where we put the image  */
+    /*na chaile ei portion ta delete koris*/
+body{
+  background-image: url(desk.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}  
+     /*  header ta */
+  header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 2%;
+    
+    }
+    .logo img{
+      max-width: 300px;
+      height: auto;
+      
+    }
+    .navigation-menu{
+        display: flex;
+        
+    }
+    .navigation-menu a{
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 12px;
+    font-weight: 500;
+    }
+    .navigation-menu a:hover{
+      color: rgb(230, 7, 66);
+      font-weight: 900;
+    }
+    .navigation-menu a.active{
+    font-weight: 900;
+    font-style: oblique;
+    font-size: 1.25em;
+    background-color: transparent;
+    border-radius: 50px;
+    }
+    .navigation-icons{
+    display: flex;
+    align-items: center;
+    display: inline;
+    }
+    .navigation-icons i{
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 400;
+    }
+    .navigation-icons i:hover{
+        transform: scale(1.5);
+        color: rgb(255, 0, 149);
+    }
+       /*  search box er kaj  */
+    .box{
+    height: 40px;
+     display: flex;
+     cursor: pointer;
+    background-color: #871919;
+    border-radius: 30px;
+    align-items: center;
+    padding: 10px  ;
+    }
+    
+    .box text{
+      height: 40px;
+    }
+    
+    .box:hover input{
+        width: 230px;
+    }
+    .box input{
+        width: 0;
+        height: 100;
+        outline: none;
+        border: none;
+        font-weight: 600;
+        transition: 0.8s ease-in-out;
+    }
+    .box a.search{
+      
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .box a.search:hover{
+        transform: scale(1.6);
+       
+    }
+
+       /*  footer er kaj  */
+    footer{
+        width: 100%;
+        position:relative;
+       bottom: 0px;
+        background:linear-gradient(to right,#000000, #a52a2a);
+        color: #ffffff;
+        padding: 15px 0px 4px ;
+        border-top-left-radius: 140px; 
+        font-size: 15px;
+      
+      
+      }
+      .row{
+      
+        width:80%;
+        margin:auto;
+        display:flex;
+        flex-wrap:wrap ;
+        align-items: flex-start;
+        justify-content:space-between ;
+      }
+      .col{
+      flex-basis:1;
+      padding: 10px;
+      
+      }
+      p{
+      
+        margin-top: 15px;
+      
+      }
+      .logofoot {
+        width:100px;
+        height: auto;
+        margin-bottom:10pxpx ;
+      
+      }
+      .col h3{
+      
+        width:fit-content;
+        border-bottom:40px ;
+        position:relative;
+      }
+      
+      
+      .email-id{
+      
+        width:fit-content;
+        border-bottom: 1px solid #fffdfd;
+        margin:20px 10;
+      }
+      ul li {
+      
+         list-style:none ;
+         margin-bottom: 10px;
+      }
+      ul li a{
+      
+        text-decoration:none;
+        color: #fff;
+      }
+      form{
+      
+        margin-top: 15px;
+       
+        padding-bottom: 15px;
+      display: flex;
+        align-items: center;
+        justify-content:space-between ;
+        border-bottom: 2px solid #fffdfd;
+        margin-bottom: 10px;
+      }
+      #one{
+        font-size: 25px;
+        margin-right: 10px;
+      
+      }
+      #two{
+        font-size: 27px;
+       
+        cursor: pointer;
+        color: #ffffff;
+      }
+      form input{
+        width:100%;
+        background: transparent;
+        color:#fffcfc;
+        border: 0;
+        outline: none;
+      
+      }
+      
+      form button {
+      
+        background: transparent;
+        border: 0;
+        outline:none;
+        cursor: pointer;
+      }
+      .social-icons{
+        font-size: 35px;
+      cursor: pointer;
+      }
+      
+      .design{
+      opacity: 0.7;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin: 0 5px;
+      }
+      hr{
+      
+      width: 90%;
+      border: 0;
+      border-bottom: 1px solid #ffffff;
+      margin: 20px auto;
+      }
+      .copyright{
+      text-align: center;
+      font-size: 12px;
+      }
+      
+      .underline{
+      width:100%;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      background-color: #8f8d8d;
+      
+      left: 0;
+      }
+      
+      .underline span{
+      
+      width: 15px;
+      height: 100%;
+      background: #fff;
+      left: 10px;
+      border-radius: 5px;
+      position: absolute;
+      animation:moving 2s linear infinite;
+      
+      
+      }
+      @keyframes moving{
+      
+      0%{
+        left: -20px;
+      }
+      100%{
+        left: 100%;
+      }
+    }  
+    /* Article */
+    .content{
+    width:90%;
+    margin: 30px auto 30px;
+  
+
+    }
+    .clearfix::after{
+      content:"";
+      display: block;
+      clear:both;
+    }
+    .content .main-content{
+width: 100%;
+float: left;
+
+    }
+.content .main-content .post{
+width:95%;
+height: 270px;
+margin: 10px auto; 
+border-radius: 5px;
+background: #e34848;/*(Colour ta change koris)*/
+position: relative;
+}
+.content .main-content .recent-post-title{
+margin:20px;
+margin-left: 50px;
+font-size: 2.5rem;
+}
+.content .main-content .post .post-image{
+  width:40%;
+  height: 100%;
+  float: left;
+
+}
+.content .main-content .post .post-preview{
+  padding: 10px;
+  width:60%;
+  float:right;
+}
+/* Article er Button       */
+.btn{
+padding: .5rem 1rem;
+background: rgb(234, 140, 18);
+color: rgb(255, 255, 255);
+border: 5px solid transparent;
+border-radius: 15px;
+}
+.btn:hover{
+  background-color:rgb(213, 16, 223) ;
+  color: rgb(255, 30, 0);
+}
+.content .main-content .post .read-more{
+position: absolute;
+bottom: 10px;
+right:10px;
+border: 1px solid  rgb(234, 140, 18) ;
+background: transparent;
+border-radius: 0px;
+color:  rgb(234, 140, 18);
+
+}
+
+.content .main-content .post .read-more:hover{
+  background-color:rgb(213, 16, 223) ;
+  color: rgb(255, 30, 0);
+transition: .25s;
+}
+
+/* Background er Video       */
+.hero{
+width:100%;
+height: 80vh;
+/* Video upor inspirational likka dekhar jonno gradient add korsi.......Change koris       */
+background-image: linear-gradient(rgba(232, 8, 150, 0.3),rgba(12,3,51,0.3));
+position: relative;
+padding: 0 5%;
+align-items: center;
+justify-content: center;
+display: flex;
+
+}
+
+.video-content{
+text-align: center;
+
+}
+.video-content h1{
+  font-size: 95px;
+  color: #fff;
+  transition: 0.5s;
+ 
+}
+.video-content p{
+
+  color: #ffffff;
+  margin-left:1000px;
+  transition: 0.5s;
+
+}
+.video-content p:hover{
+
+  -webkit-text-stroke:1px #fff ;
+  color: transparent;
+  font-style: italic;
+
+}
+.video-content h1:hover{
+-webkit-text-stroke:2px #fff ;
+color: transparent;
+
+}
+.background-clip{
+position:absolute;
+right: 0;
+bottom: 0;
+z-index: -1;
+height: 80vh;
+width: 100%;
+object-fit: cover;
+
+
+}
+
+

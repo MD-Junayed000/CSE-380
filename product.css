@@ -1,0 +1,69 @@
+    .heading{
+
+        text-align: center;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+        font-size: 3.5rem;
+        color: var(--black);
+    }
+    .heading span
+    {
+
+        background:var(--green);
+        color: aquamarine;
+        display: inline-block;
+        padding: .5rem;
+        clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+    }
+    .products .box-container
+    {
+        border: 2px solid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        gap:1.5rem;
+    }
+    .products .box-container .box
+    {
+        border:0px solid red;
+        padding: 3rem 2rem;
+        background: #fff;
+        outline-offset: -1rem;
+        text-align:center ;
+        box-shadow:var(--box-shadow) ;
+
+    }
+    .products .box-container .box:hover
+    {
+        box-shadow: 1px 1px 10px 4px var(--green);
+    }
+    .products .box-container .box img
+    {
+        margin:1rem 0 ;
+        height: 15cm;
+    }
+    .products .box-container .box h3
+    {
+        font-size: 2.5rem;
+        line-height:1.8 ;
+        color:var(--black) ;
+    }
+    .products .box-container .box p
+    {
+        font-size: 2.5rem;
+        line-height:1.8 ;
+        color:var(--light-color) ;
+    }
+
+
+
+    @media (max-width:450px)
+    {
+        html {
+            font-size: 50%;
+
+        }
+        .heading
+        {
+            font-size: 2.5rem;
+        }
+    }
